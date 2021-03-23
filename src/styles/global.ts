@@ -3,7 +3,6 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
 
 :root{ //variaveis de estilização
-  --background: #f8f2f5;
   --red:#E62E4D;
   --blue:#5429CC;
   --green: #33CC95;
@@ -37,7 +36,7 @@ html{
 
 
 body{
-  background:  var(---background);
+  background:  var(--background);
   -webkit-font-smoothing: antialiased; //deixa as fontes mais nítidas
 }
 
@@ -60,7 +59,5 @@ button {
 opacity: 0.6; //deixar mais clarinho;
 cursor: not-allowed; //
 }
-
-
 `;
 
