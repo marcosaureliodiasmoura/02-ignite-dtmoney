@@ -38,6 +38,19 @@ export const GlobalStyle = createGlobalStyle`
     border-radius: 0.25rem;
 }
 
+.react-modal-close{
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  border: 0;
+  background: transparent;
+  transition: filter 0.2s;
+
+&:hover{
+  filter: brightness(0.8);
+}
+}
+
 * { //efeito aplicado em todas as páginas
   margin: 0;
   padding: 0;
@@ -56,13 +69,6 @@ html{
   }
 }
 
-
-body{
-  background:  var(--background);
-  -webkit-font-smoothing: antialiased; //deixa as fontes mais nítidas
-
-
-
 //adiciono a fonte no:
 body, input, textarea, button{
   font-family: 'Poppins', sans-serif;
@@ -70,8 +76,17 @@ body, input, textarea, button{
 }
 
 h1, h2, h3, h4, h5, h6, strong{
-  font-weight: 600;
+  font-weight: 800;
 }
+
+
+
+body{
+  background:  var(--background);
+  -webkit-font-smoothing: antialiased; //deixa as fontes mais nítidas
+}
+
+
 
 button {
   cursor: pointer; //habilitar botão clicavel
@@ -80,7 +95,6 @@ button {
 [disabled]{ //Tudo que estiver desabilitado na aplic (botões, inputs)
 opacity: 0.6; //deixar mais clarinho;
 cursor: not-allowed; //
-}
 }
 `;
 
